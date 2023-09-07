@@ -50,7 +50,7 @@ public class bill extends JFrame {
 	public void SelectItem()
 	{
 		try {
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/products", "root", "Aaron05@2003$");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/products", "root", "");
 			st = con.createStatement();
 			rs = st.executeQuery("SELECT * FROM products.products");
 			disptable.setModel(DbUtils.resultSetToTableModel(rs));
@@ -63,7 +63,7 @@ public class bill extends JFrame {
 	public void update() {
 		
 		try {
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/products", "root", "Aaron05@2003$");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/products", "root", "");
 		    String Query = "UPDATE products.products set Quantity='"+newqty+"'"+"where Productid="+prid;                                
 			Statement Add = con.createStatement();
 			Add.executeUpdate(Query);

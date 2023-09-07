@@ -57,7 +57,7 @@ public class Products extends JFrame {
 
 	{
 		try {
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/products", "root", "Aaron05@2003$");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/products", "root", "");
 			st = con.createStatement();
 			rs = st.executeQuery("select * from products.products");
 			disptable.setModel(DbUtils.resultSetToTableModel(rs));
@@ -168,7 +168,7 @@ public class Products extends JFrame {
 				{
 					try {
 						
-						con = DriverManager.getConnection("jdbc:mysql://localhost:3306/products", "root", "Aaron05@2003$");
+						con = DriverManager.getConnection("jdbc:mysql://localhost:3306/products", "root", "");
 					    PreparedStatement add = con.prepareStatement("INSERT INTO products VALUES(?,?,?,?,?)");
 					    add.setInt(1, Integer.valueOf(txtprod.getText()));
 					    add.setString(2, txtname.getText());
@@ -208,7 +208,7 @@ public class Products extends JFrame {
 				}else
 				{
 					try {
-						con = DriverManager.getConnection("jdbc:mysql://localhost:3306/products", "root", "Aaron05@2003$");
+						con = DriverManager.getConnection("jdbc:mysql://localhost:3306/products", "root", "");
 					    String Query = "UPDATE products.products set Name='"+txtname.getText()+"'"+",Quantity='"+txtquant.getText()+"'"+",Price='"+txtprice.getText()+"'"+",Description='"+txtdesp.getText()+"'"+"where Productid="+txtprod.getText();                                
 						Statement Add = con.createStatement();
 						Add.executeUpdate(Query);
@@ -253,7 +253,7 @@ public class Products extends JFrame {
 				}else
 				{
 					try {
-						con = DriverManager.getConnection("jdbc:mysql://localhost:3306/products", "root", "Aaron05@2003$");
+						con = DriverManager.getConnection("jdbc:mysql://localhost:3306/products", "root", "");
 					    String pid = txtprod.getText();
 					    String Query = "DELETE FROM products.products where Productid="+pid;
 					    Statement Add = con.createStatement();

@@ -103,7 +103,7 @@ public class SelLogin extends JFrame {
 				} 
 				else {
 					try {
-						con = DriverManager.getConnection("jdbc:mysql://localhost:3306/products", "root", "Aaron05@2003$");
+						con = DriverManager.getConnection("jdbc:mysql://localhost:3306/products", "root", "");
 						st = con.createStatement();
 						rs = st.executeQuery(Query);
 					    if (rs.next()) {
