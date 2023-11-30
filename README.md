@@ -69,12 +69,8 @@ Once the system is installed and configured, you can access it through a compati
 The Shopping Management System includes the following features:
 
 1. Product management, including adding, updating, and deleting products.
-2. Order processing and tracking.
-3. User account management for employees and administrators.
-4. Reporting and analytics for sales and inventory.
-5. User-friendly and intuitive interface design.
-6. Security features to protect sensitive data.
-7. Compatibility with popular web browsers.
-8. Scalability to accommodate various business sizes and types.
+2. User account management for employees and administrators.
+3. Reporting for sales and inventory.
+4. User-friendly and intuitive interface design.
 
 ## Please consider starring the repository if you find it useful. Thank you!
